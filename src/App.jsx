@@ -1,23 +1,50 @@
+import Root from "./routes/root";
+import ErrorPage from "./error-page";
+import Empanada from "./routes/Empanada";
+import Pizza from "./routes/Pizza";
+import Bocadito from "./routes/Bocadito";
+import Principal from "./routes/Principal";
 
-import reactLogo from './assets/logo100w.png' 
-import './App.css'
-import Carousel from './Carousel'
+import {
+  createBrowserRouter,
+  RouterProvider,  
+} from "react-router-dom";
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",        
+        element: <Principal />,
+        
+      },
+      {
+        path: "/empanada",
+        element: <Empanada />,
+      },
+      {
+        path: "/pizza",
+        element: <Pizza />,
+      },
+      {
+        path: "/bocadito",
+        element: <Bocadito />,
+      }
+    ] 
+  },
+  
+]);
+
+
 
 function App() {
   return (
-    <div className='flex flex-col min-h-screen'>
-      <header className='flex justify-between'>
-        <img src={reactLogo} alt="react logo" />
-        <h2>Menu</h2>        
-      </header>
-      <main className='flex-1'>
-        <Carousel />
-      </main>
-      <footer>
-        <p>Made by <a href='https://febo.digital'>Febo</a></p>
-      </footer>
-      
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
