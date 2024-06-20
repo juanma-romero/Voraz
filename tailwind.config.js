@@ -9,6 +9,9 @@ export default {
       'gara':['garamond-premier-pro']
     },
     extend: {},
+    colors: {
+      'violeta':'#590256'
+    }
   },
   plugins: [],
 }

@@ -1,16 +1,19 @@
 import './App.css'
 import imagenPrin from './assets/premGeneral.jpg'
+import whatsap from './assets/WhatsAppButtonGreenSmall.png'
 
 function App() {
   
 
   return (
-    <div className="flex flex-col">
-      <header  className="justify-start">
-        <p className='font-gara'>VORAZ</p>
-        <p>Contacto:</p>
+    <div className="flex flex-col ">
+      <header  className="flex justify-between pt-4 ">
+        <p className='font-gara text-3xl'>VORAZ</p>
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/595985214420">
+          <img className='w-1/2' alt="Chat on WhatsApp" src={whatsap} />
+        </a>
       </header>
-      <body className="min-h-screen">
+      <main className="min-h-screen pt-4">
         <h1 className="text-3xl font-bold">
         Bocaditos Deliciosos
         </h1>
@@ -39,7 +42,7 @@ function App() {
         <h2>Pedidos</h2>
           <p>Contamos con disponibilidad en el dia, aproximadamente una hora. Pero siempre es mejor hacer tu pedio con anticipacion para asegurarte la disponibilidad</p>
           <h3>Horarios</h3>
-      </body>
+      </main>
       
       <footer className="justify-end">
         <p className='flex justify-center'>Made by&nbsp;<a className='text-yellow-500' href='https://febo.solutions'>Febo</a></p>
