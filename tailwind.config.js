@@ -10,7 +10,8 @@ export default {
     },
     extend: {},
     colors: {
-      'violeta':'#590256'
+      'violeta':'#590256',
+      'verde':'#30af50'
     }
   },
   plugins: [],
