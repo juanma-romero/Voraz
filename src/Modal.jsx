@@ -24,6 +24,7 @@ const Modal = () => {
           <p className="text-lg">Estimado usuario,</p>
           <p>Antes de que pueda acceder completamente a nuestra página web, es importante que acepte:</p>
           <ol>
+            <Link to={Politicas} >Políticas de privacidadLink</Link>
             <li><a href="/Politicas" className="text-verde hover:underline" target="_blank">Políticas de privacidad</a></li>
             <li><a href="/Cookies" className="text-verde hover:underline" target="_blank">Uso de cookies</a></li>
             <li><a href="/Terminos" className="text-verde hover:underline" target="_blank">Terminos y condiciones</a></li>

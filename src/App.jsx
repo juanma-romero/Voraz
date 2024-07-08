@@ -7,7 +7,7 @@ import tiktok from './assets/tik-tok_3046129.png'
 import conjunto from './assets/conjunto.jpg'
 import premium from './assets/bocaditosArribaChica.jpg'
 import eco from './assets/ecoGral.jpg'
-import { Routes, Route } from 'react-router-dom'  
+import { Routes, Route, Link } from 'react-router-dom'  
 import Politicas from './Politicas' 
 import Cookies from './Cookies'
 import Terminos from './Terminos'
@@ -36,6 +36,7 @@ export default function App() {
       <footer className="justify-end mt-8">
         <p className='text-center md:text-xl'>Seguinos en las redes sociales!!</p>
         <div className='flex mt-8 ml-10 md:justify-around'>
+          
           <a href='https://www.facebook.com/vorazcde/' target="_blank"><img className='w-1/2 md:w-20' src={face}/></a>
           <a href='https://www.instagram.com/vorazcde/' target="_blank"><img className='w-1/2 md:w-20' src={insta}/></a>
           <a href='https://www.tiktok.com/@vorazcde' target="_blank"><img className='w-1/2 md:w-20' src={tiktok}/></a>
