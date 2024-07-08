@@ -1,5 +1,6 @@
 import Cookies from 'js-cookie'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Modal = () => {
   const [mostrarModal, setMostrarModal] = useState(true)
@@ -24,10 +25,9 @@ const Modal = () => {
           <p className="text-lg">Estimado usuario,</p>
           <p>Antes de que pueda acceder completamente a nuestra página web, es importante que acepte:</p>
           <ol>
-            <Link to={Politicas} >Políticas de privacidadLink</Link>
-            <li><a href="/Politicas" className="text-verde hover:underline" target="_blank">Políticas de privacidad</a></li>
-            <li><a href="/Cookies" className="text-verde hover:underline" target="_blank">Uso de cookies</a></li>
-            <li><a href="/Terminos" className="text-verde hover:underline" target="_blank">Terminos y condiciones</a></li>
+            <li><Link to={'politicas'} className="text-verde hover:underline" target="_blank">Políticas de privacidad</Link></li>
+            <li><Link to={'cookies'} className="text-verde hover:underline" target="_blank">Uso de cookies</Link></li>
+            <li><Link to={'terminos'} className="text-verde hover:underline" target="_blank">Terminos y condiciones</Link></li>
           </ol>
          <p>Queremos asegurarnos de que tenga pleno conocimiento de cómo se recopilan,
             utilizan y protegen sus datos personales, así como de cómo se utilizan las cookies en nuestro sitio.</p>
