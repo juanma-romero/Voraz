@@ -25,9 +25,9 @@ const Modal = () => {
           <p className="text-lg">Estimado usuario,</p>
           <p>Antes de que pueda acceder completamente a nuestra página web, es importante que acepte:</p>
           <ol>
-            <li><Link to={'politicas'} className="text-verde hover:underline" target="_blank">Políticas de privacidad</Link></li>
-            <li><Link to={'cookies'} className="text-verde hover:underline" target="_blank">Uso de cookies</Link></li>
-            <li><Link to={'terminos'} className="text-verde hover:underline" target="_blank">Terminos y condiciones</Link></li>
+            <li><Link to={'/politicas'} className="text-verde hover:underline" target="_blank">Políticas de privacidad</Link></li>
+            <li><Link to={'/cookies'} className="text-verde hover:underline" target="_blank">Uso de cookies</Link></li>
+            <li><Link to={'/terminos'} className="text-verde hover:underline" target="_blank">Terminos y condiciones</Link></li>
           </ol>
          <p>Queremos asegurarnos de que tenga pleno conocimiento de cómo se recopilan,
             utilizan y protegen sus datos personales, así como de cómo se utilizan las cookies en nuestro sitio.</p>
