@@ -7,7 +7,7 @@ import tiktok from './assets/tik-tok_3046129.png'
 import conjunto from './assets/conjunto.jpg'
 import premium from './assets/bocaditosArribaChica.jpg'
 import eco from './assets/ecoGral.jpg'
-import { Routes, Route } from 'react-router-dom'  
+import { Routes, Route, Link } from 'react-router-dom'  
 import Politicas from './Politicas' 
 import Cookies from './Cookies'
 import Terminos from './Terminos'
@@ -26,6 +26,7 @@ export default function App() {
       </header>
       <Routes>
         <Route index path='/' element={<MainHome />} />
+        
         <Route path="/politicas" element={<Politicas />} />
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/terminos" element={<Terminos />} />
@@ -44,9 +45,9 @@ export default function App() {
 
         </div>
         <div className='flex flex-row'>
-          <a target="_blank" href="/Politicas" className="text-verde hover:underline mt-5 ml-4">Políticas de privacidad</a>
-          <a target="_blank" href="/Cookies" className="text-verde hover:underline mt-5 ml-4">Uso de cookies</a>
-          <a target="_blank" href="/Terminos" className="text-verde hover:underline mt-5 ml-4">Terminos y condiciones</a>
+        <Link to={'/politicas'} className="text-verde hover:underline" target="_blank">Políticas de privacidad</Link>
+        <Link to={'/cookies'} className="text-verde hover:underline" target="_blank">Uso de cookies</Link>
+        <Link to={'/terminos'} className="text-verde hover:underline" target="_blank">Terminos y condiciones</Link>
 
         </div>
         <p className='flex justify-center pt-6'>Made by&nbsp;<a className='text-yellow-500' href='/'>Febo</a></p>
