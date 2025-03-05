@@ -79,31 +79,31 @@ function MainHome() {
           <tbody>
             <tr>
               <td className="tg-0lax">Sandw. Mila de Pollo</td>
-              <td className="tg-0lax pl-4">20 000 gs</td>
+              <td className="tg-0lax pl-4">25 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Empanaditas</td>
-              <td className="tg-0lax pl-4">15 000 gs</td>
+              <td className="tg-0lax pl-4">18 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Canastitas</td>
-              <td className="tg-0lax pl-4">15 000 gs</td>
+              <td className="tg-0lax pl-4">18 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Mini Burger</td>
-              <td className="tg-0lax pl-4">20 000 gs</td>
+              <td className="tg-0lax pl-4">25 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Croquetas</td>
-              <td className="tg-0lax pl-4">10 000 gs</td>
+              <td className="tg-0lax pl-4">12 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Pizetas</td>
-              <td className="tg-0lax pl-4">10 000 gs</td>
+              <td className="tg-0lax pl-4">12 000 gs</td>
             </tr>
             <tr>
               <td className="tg-0lax">Sandw miga JyQ</td>
-              <td className="tg-0lax pl-4">10 000 gs</td>
+              <td className="tg-0lax pl-4">12 000 gs</td>
             </tr>            
           </tbody>
           </table>
@@ -112,7 +112,7 @@ function MainHome() {
           <p className='md:text-xl'>Contamos con dos combos a precio promocional para que pruebes una variedad de nuestros productos</p>
             <h3 className='text-center mt-4 text-xl underline md:text-3xl'>Combo Economico</h3>
             <img className='mt-6 md:mx-auto' src={eco}/>
-            <p className='text-center text-violeta md:text-xl mt-4'>100 000 gs por 100 unidades</p>
+            <p className='text-center text-violeta md:text-xl mt-4'>120 000 gs por 100 unidades</p>
             <ol className='text-center md:text-2xl mt-6'>
               <li>20 Sandw Jamon y Queso</li>
               <li>20 Croquetas</li>
@@ -122,7 +122,7 @@ function MainHome() {
             </ol>
             <h3 className='text-center text-xl underline md:text-3xl mt-10'>Combo Premium</h3>
             <img className='mt-6 md:mx-auto' src={premium}/>
-            <p className='text-center text-violeta  md:text-xl mt-4'>130 000 gs por 100 unidades</p>
+            <p className='text-center text-violeta  md:text-xl mt-4'>150 000 gs por 100 unidades</p>
             <ol className='text-center md:text-2xl mt-6'>
               <li>20 Sandw Milanesa de Pollo</li>
               <li>20 Canastitas</li>
