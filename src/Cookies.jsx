@@ -58,7 +58,7 @@ export default function Cookies() {
 
         <p>Si tienes alguna pregunta o inquietud sobre nuestras políticas de cookies, no dudes en ponerte
             en contacto con nosotros a través de nuestro correo electrónico de contacto: 
-            <a href="mailto:manager@voraz.site">manager@voraz.site</a>.</p>
+            <a href="mailto:vorazcde@gmail.com">vorazcde@gmail.com</a>.</p>
             </div>
   )
 }

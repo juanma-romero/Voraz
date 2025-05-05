@@ -46,7 +46,7 @@ export default function Politicas() {
             <br />
         <h3 className='text-xl underline'>Contacto</h3>
             <p>Si tienes alguna pregunta o inquietud sobre nuestra Política de Privacidad, 
-            no dudes en ponerte en contacto con nosotros a través del email: manager@voraz.site.</p>
+            no dudes en ponerte en contacto con nosotros a través del email: vorazcde@gmail.com</p>
     </div>
   )
 }

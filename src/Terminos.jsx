@@ -24,7 +24,7 @@ export default function Terminos() {
             <li><strong>*El servicio</strong> se refiere al sitio web.</li>
             <li><strong>*Términos y condiciones</strong> (también denominados "Términos") significan estos Términos y condiciones que forman el acuerdo completo entre usted y la Compañía con respecto al uso del Servicio. Este acuerdo de Términos y condiciones se ha creado con la ayuda del Generador de términos y condiciones.</li>
             <li><strong>*Servicio de redes sociales de terceros</strong> significa cualquier servicio o contenido (incluidos datos, información, productos o servicios) proporcionado por un tercero que puede mostrarse, incluirse o ponerse a disposición mediante el Servicio.</li>
-            <li><strong>*El sitio web</strong> se refiere a Voraz, accesible desde https://www.voraz.site/</li>
+            <li><strong>*El sitio web</strong> se refiere a Voraz, accesible desde https://voraz.vercel.app/</li>
             <li><strong>*Usted</strong> se refiere a la persona que accede o utiliza el Servicio, o la empresa u otra entidad legal en nombre de la cual dicha persona accede o utiliza el Servicio, según corresponda.</li>
         </ul>
         <br />
@@ -81,7 +81,7 @@ export default function Terminos() {
         <br />
         <h3 className='underline'>Contáctenos</h3>
         <p>Si tiene alguna pregunta sobre estos Términos y condiciones, puede contactarnos:</p>
-        <p>Por correo electrónico: <a href="mailto:manager@voraz.site">manager@voraz.site</a></p>
+        <p>Por correo electrónico: <a href="mailto:vorazcde@gmail.com">vorazcde@gmail.com</a></p>
     </div>
   )
 }
