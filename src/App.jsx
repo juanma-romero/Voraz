@@ -11,6 +11,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Politicas from './Politicas' 
 import Cookies from './Cookies'
 import Terminos from './Terminos'
+import NuevoDisenoHome from './NuevoDisenoHome'
 import { useState } from 'react'
 import Modal from './Modal'
 
@@ -25,7 +26,8 @@ export default function App() {
           </a>        
       </header>
       <Routes>
-        <Route index path='/' element={<MainHome />} />
+        <Route index path='/' element={<NuevoDisenoHome />} />
+        <Route path="/diseno-anterior" element={<MainHome />} />
         
         <Route path="/politicas" element={<Politicas />} />
         <Route path="/cookies" element={<Cookies />} />
@@ -143,4 +145,4 @@ function MainHome() {
         <a href='https://maps.app.goo.gl/1KmjSXHz6rPAKvfH6' target="_blank" className='mt-4 text-violeta md:text-xl'>Hace click para ver en Google Maps &#128506;</a>
       </main>
   )
-} 
+}
