@@ -19,7 +19,7 @@ export default function NuevoDisenoHome() {
           </p>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
             Bocaditos deliciosos e irresistibles, perfectos para compartir con amigos, 
-            familiares o compañeros de trabajo en Ciudad del Este, Paraguay.
+            familiares o compañeros de trabajo en Ciudad del Este.
           </p>
           <div className="mb-12">
             <img 
@@ -151,7 +151,7 @@ export default function NuevoDisenoHome() {
                 alt="Combo Económico"
               />
               <p className="text-center text-2xl font-bold text-violeta mb-6">
-                120 000 gs por 100 unidades
+                145 000 gs por 100 unidades
               </p>
               <ul className="space-y-2 text-center">
                 <li className="text-white">• 20 Sandw Jamón y Queso</li>
@@ -173,7 +173,7 @@ export default function NuevoDisenoHome() {
                 alt="Combo Premium"
               />
               <p className="text-center text-2xl font-bold text-violeta mb-6">
-                150 000 gs por 100 unidades
+                198 000 gs por 100 unidades
               </p>
               <ul className="space-y-2 text-center">
                 <li className="text-white">• 20 Sandw Milanesa de Pollo</li>
