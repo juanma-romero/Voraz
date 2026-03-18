@@ -18,11 +18,11 @@ import Modal from './Modal'
 export default function App() { 
   const [open, setOpen] = useState(false)
   return (
-    <div className="flex flex-col ">
-      <header  className="mt-4 flex justify-between">          
-          <p className='font-gara text-3xl'><a href={'/'}>VORAZ</a></p>
-          <a className='w-1/2 md:w-60' aria-label="Chat on WhatsApp" href="https://wa.me/595985214420">
-            <img className='' alt="Chat on WhatsApp" src={whatsap} />
+    <div className="flex flex-col min-h-screen bg-[#111] text-white font-inter selection:bg-voraz-pink selection:text-white">
+      <header className="py-4 px-6 flex justify-between items-center bg-[#0a0a0a] border-b border-white/5 sticky top-0 z-50 shadow-md">          
+          <p className='font-gara text-4xl tracking-widest text-white hover:text-voraz-pink transition-colors'><Link to='/'>VORAZ</Link></p>
+          <a className='w-40 md:w-48 transition-transform hover:scale-105' aria-label="Chat on WhatsApp" href="https://wa.me/595985214420">
+            <img className='w-full' alt="Chat on WhatsApp" src={whatsap} />
           </a>        
       </header>
       <Routes>
@@ -36,23 +36,22 @@ export default function App() {
 
       </Routes>
       <Modal />
-      <footer className="justify-end mt-8">
-        <p className='text-center md:text-xl'>Seguinos en las redes sociales!!</p>
-        <div className='flex mt-8 ml-10 md:justify-around'>
+      <footer className="mt-auto py-12 px-6 bg-[#0a0a0a] border-t border-white/5 text-center">
+        <p className='text-2xl font-oswald text-voraz-pink uppercase mb-8 tracking-wide'>¡Seguinos en las redes sociales!</p>
+        <div className='flex justify-center gap-8 mb-10'>
           
-          <a href='https://www.facebook.com/vorazcde/' target="_blank"><img className='w-1/2 md:w-20' src={face}/></a>
-          <a href='https://www.instagram.com/vorazcde/' target="_blank"><img className='w-1/2 md:w-20' src={insta}/></a>
-          <a href='https://www.tiktok.com/@vorazcde' target="_blank"><img className='w-1/2 md:w-20' src={tiktok}/></a>
-
-
-        </div>
-        <div className='flex flex-row'>
-        <Link to={'/politicas'} className="text-verde hover:underline" target="_blank">Políticas de privacidad</Link>
-        <Link to={'/cookies'} className="text-verde hover:underline" target="_blank">Uso de cookies</Link>
-        <Link to={'/terminos'} className="text-verde hover:underline" target="_blank">Terminos y condiciones</Link>
+          <a href='https://www.facebook.com/vorazcde/' title='Facebook' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={face}/></a>
+          <a href='https://www.instagram.com/vorazcde/' title='Instagram' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={insta}/></a>
+          <a href='https://www.tiktok.com/@vorazcde' title='TikTok' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={tiktok}/></a>
 
         </div>
-        <p className='flex justify-center pt-6'>Made by&nbsp;<a className='text-yellow-500' href='/'>Febo</a></p>
+        <div className='flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm'>
+        <Link to={'/politicas'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Políticas de privacidad</Link>
+        <Link to={'/cookies'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Uso de cookies</Link>
+        <Link to={'/terminos'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Términos y condiciones</Link>
+
+        </div>
+        <p className='text-sm text-gray-500 flex justify-center'>Made by&nbsp;<a className='text-voraz-pink font-bold hover:text-white transition-colors' href='/'>Febo</a></p>
       </footer>
     </div>
   )
