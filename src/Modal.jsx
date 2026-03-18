@@ -20,7 +20,7 @@ const Modal = () => {
   return (
     <>
       {mostrarModal && ( // Mostrar solo si mostrarModal es true
-      <dialog open className="bg-violeta text-white text-center absolute bottom-0 right-0 left-0">
+      <dialog open className="bg-violeta text-white text-center fixed bottom-0 right-0 left-0 z-50">
         <div className="m-4 ">
           <p className="text-lg">Estimado usuario,</p>
           <p>Antes de que pueda acceder completamente a nuestra página web, es importante que acepte:</p>
