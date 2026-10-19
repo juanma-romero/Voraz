@@ -5,22 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'gara':['garamond-premier-pro'],
-      'oswald': ['Oswald', 'sans-serif'],
-    },
     extend: {
       colors: {
-        'violeta':'#590256',
-        'verde':'#30af50',
-        'neon-pink': '#ff0080',
-        'neon-blue': '#00ffff',
-        'neon-green': '#39ff14',
-        'neon-purple': '#bf00ff',
-        'voraz-pink': '#d926e9',
-        'voraz-dark': '#111111',
-      }
-    }
+        'voraz-black': '#0a0a0a',
+        'voraz-card': '#141414',
+        'voraz-pink': '#d925e9',
+        'voraz-pink-hover': '#c018d0',
+        'voraz-gold': '#d4af37',
+      },
+      fontFamily: {
+        'garamond': ['EB Garamond', 'Garamond', 'serif'],
+        'domus': ['Outfit', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
