@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, CheckCircle, MapPin, Clock, Phone, FileText, ChevronRight, Award, ShieldCheck, Sparkles, Navigation } from 'react-feather';
+import { MessageCircle, CheckCircle, MapPin, Clock, Phone, FileText, ChevronRight, Award, ShieldCheck, Zap, Navigation } from 'react-feather';
 
 // Assets profesionales optimizados
 import heroImg from './assets/pro/hero_surtido.webp';
@@ -72,7 +72,7 @@ export default function App() {
           
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-xs sm:text-sm text-zinc-300">
-              <Sparkles size={14} className="text-[#d925e9]" />
+              <Zap size={14} className="text-[#d925e9]" />
               <span>Bocaditos artesanales entregados tibios en su caja</span>
             </div>
 
