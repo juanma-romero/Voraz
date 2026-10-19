@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, CheckCircle, MapPin, Clock, Phone, FileText, ChevronRight, Award, ShieldCheck, Zap, Navigation } from 'react-feather';
+import { MessageCircle, CheckCircle, MapPin, Clock, Phone, FileText, ChevronRight, Award, Shield, Zap, Navigation } from 'react-feather';
 
 // Assets profesionales optimizados
 import heroImg from './assets/pro/hero_surtido.webp';
@@ -434,7 +434,7 @@ export default function App() {
               </div>
 
               <div className="p-4 rounded-xl bg-zinc-950 border border-zinc-800/80 text-xs text-zinc-400 flex items-start gap-2.5">
-                <ShieldCheck size={18} className="text-[#d925e9] shrink-0 mt-0.5" />
+                <Shield size={18} className="text-[#d925e9] shrink-0 mt-0.5" />
                 <span>
                   ¿Dudas sobre el costo a tu barrio exacto? Escribinos por WhatsApp con tu ubicación compartida y te confirmamos al instante.
                 </span>
