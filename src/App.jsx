@@ -15,15 +15,38 @@ import NuevoDisenoHome from './NuevoDisenoHome'
 import { useState } from 'react'
 import Modal from './Modal'
 
+import logoVoraz from './assets/pro/logo_hd.png'
+
 export default function App() { 
   const [open, setOpen] = useState(false)
   return (
-    <div className="flex flex-col min-h-screen bg-[#111] text-white font-inter selection:bg-voraz-pink selection:text-white">
-      <header className="py-4 px-6 flex justify-between items-center bg-[#0a0a0a] border-b border-white/5 sticky top-0 z-50 shadow-md">          
-          <p className='font-gara text-4xl tracking-widest text-white hover:text-voraz-pink transition-colors'><Link to='/'>VORAZ</Link></p>
-          <a className='w-40 md:w-48 transition-transform hover:scale-105' aria-label="Chat on WhatsApp" href="https://wa.me/595985214420">
-            <img className='w-full' alt="Chat on WhatsApp" src={whatsap} />
-          </a>        
+    <div className="flex flex-col min-h-screen bg-[#0d0d0d] text-white font-inter selection:bg-voraz-pink selection:text-white">
+      <header className="py-3 px-4 sm:px-8 flex justify-between items-center bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5 sticky top-0 z-50 shadow-md">
+          <Link to='/' className="flex items-center gap-3 group">
+            <img src={logoVoraz} alt="Logo Voraz" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/10 group-hover:border-voraz-pink transition-colors" />
+            <div>
+              <p className='font-gara text-2xl sm:text-3xl tracking-widest text-white group-hover:text-voraz-pink transition-colors font-bold leading-none'>VORAZ</p>
+              <span className='font-oswald text-[10px] sm:text-xs text-voraz-pink uppercase tracking-widest block leading-tight'>Bocaditos Deliciosos</span>
+            </div>
+          </Link>
+
+          <div className="flex items-center gap-4 sm:gap-6">
+            <nav className="hidden md:flex items-center gap-6 font-oswald uppercase text-xs tracking-wider text-gray-300">
+              <a href="#combos" className="hover:text-voraz-pink transition-colors">Combos 100u</a>
+              <a href="https://maps.app.goo.gl/1KmjSXHz6rPAKvfH6" target="_blank" rel="noreferrer" className="hover:text-voraz-pink transition-colors">Ubicación</a>
+            </nav>
+            
+            <a 
+              className='inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs sm:text-sm font-oswald uppercase tracking-wider font-bold px-4 py-2 sm:px-5 sm:py-2.5 rounded-full transition-transform hover:scale-105 shadow-md'
+              aria-label="Pedir por WhatsApp" 
+              href="https://wa.me/595985214420?text=Hola%20Voraz!%20Quiero%20hacer%20un%20pedido."
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>WhatsApp</span>
+              <span className="hidden sm:inline text-white/80 font-normal">0985 214 420</span>
+            </a>        
+          </div>
       </header>
       <Routes>
         <Route index path='/' element={<NuevoDisenoHome />} />
@@ -32,26 +55,45 @@ export default function App() {
         <Route path="/politicas" element={<Politicas />} />
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/terminos" element={<Terminos />} />
-        
-
       </Routes>
       <Modal />
-      <footer className="mt-auto py-12 px-6 bg-[#0a0a0a] border-t border-white/5 text-center">
-        <p className='text-2xl font-oswald text-voraz-pink uppercase mb-8 tracking-wide'>¡Seguinos en las redes sociales!</p>
-        <div className='flex justify-center gap-8 mb-10'>
+      <footer className="mt-auto py-12 px-6 bg-[#080808] border-t border-white/5 text-center text-gray-400 font-inter">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <div className="flex justify-center items-center gap-3">
+            <img src={logoVoraz} alt="Voraz" className="w-10 h-10 rounded-full" />
+            <span className="font-gara text-2xl tracking-widest text-white font-bold">VORAZ</span>
+          </div>
           
-          <a href='https://www.facebook.com/vorazcde/' title='Facebook' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={face}/></a>
-          <a href='https://www.instagram.com/vorazcde/' title='Instagram' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={insta}/></a>
-          <a href='https://www.tiktok.com/@vorazcde' title='TikTok' target="_blank" className="hover:scale-110 transition-transform bg-white/10 p-3 rounded-2xl hover:bg-voraz-pink/20"><img className='w-10 h-10 md:w-12 md:h-12 object-contain' src={tiktok}/></a>
-
+          <p className="text-sm text-gray-300 max-w-lg mx-auto">
+            📍 Barrio Santa Ana (a 300 mts del Hospital Regional de Ciudad del Este) · Alto Paraná, Paraguay.
+          </p>
+          
+          <p className='text-xl font-oswald text-voraz-pink uppercase tracking-wider font-bold'>¡Seguinos en nuestras redes!</p>
+          
+          <div className='flex justify-center gap-6'>
+            <a href='https://www.facebook.com/vorazcde/' title='Facebook' target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform bg-white/5 hover:bg-voraz-pink/20 p-3 rounded-2xl border border-white/5">
+              <img className='w-8 h-8 object-contain' alt="Facebook" src={face}/>
+            </a>
+            <a href='https://www.instagram.com/vorazcde/' title='Instagram' target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform bg-white/5 hover:bg-voraz-pink/20 p-3 rounded-2xl border border-white/5">
+              <img className='w-8 h-8 object-contain' alt="Instagram" src={insta}/>
+            </a>
+            <a href='https://www.tiktok.com/@vorazcde' title='TikTok' target="_blank" rel="noreferrer" className="hover:scale-110 transition-transform bg-white/5 hover:bg-voraz-pink/20 p-3 rounded-2xl border border-white/5">
+              <img className='w-8 h-8 object-contain' alt="TikTok" src={tiktok}/>
+            </a>
+          </div>
+          
+          <div className='flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-400 pt-4 border-t border-white/5'>
+            <Link to={'/politicas'} className="hover:text-voraz-pink transition-colors">Políticas de privacidad</Link>
+            <span>•</span>
+            <Link to={'/cookies'} className="hover:text-voraz-pink transition-colors">Uso de cookies</Link>
+            <span>•</span>
+            <Link to={'/terminos'} className="hover:text-voraz-pink transition-colors">Términos y condiciones</Link>
+          </div>
+          
+          <p className='text-xs text-gray-400'>
+            © {new Date().getFullYear()} Voraz. Elaboración artesanal de bocaditos en Ciudad del Este, Paraguay.
+          </p>
         </div>
-        <div className='flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm'>
-        <Link to={'/politicas'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Políticas de privacidad</Link>
-        <Link to={'/cookies'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Uso de cookies</Link>
-        <Link to={'/terminos'} className="text-gray-400 hover:text-voraz-pink transition-colors" target="_blank">Términos y condiciones</Link>
-
-        </div>
-        <p className='text-sm text-gray-500 flex justify-center'>Made by&nbsp;<a className='text-voraz-pink font-bold hover:text-white transition-colors' href='/'>Febo</a></p>
       </footer>
     </div>
   )
